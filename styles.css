@@ -1,0 +1,279 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  /* Question Card */
+  .question-card {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+  }
+  
+  .question-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .options {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .options li {
+    margin-bottom: 10px;
+  }
+  
+  .options button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f9f9f9;
+    cursor: pointer;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .options button:hover {
+    background-color: #e2e6ea;
+  }
+  
+  .answer-section {
+    display: none;
+    padding: 15px;
+    background: #f1f3f5;
+    border-radius: 6px;
+    margin-top: 15px;
+  }
+  
+  .answer-section p {
+    margin: 5px 0;
+  }
+  
+  /* Action Buttons */
+  .action-buttons {
+    margin-top: 15px;
+  }
+  
+  .action-buttons button {
+    padding: 8px 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .show-answer-btn {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .report-btn {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .workspace-btn {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .modal textarea {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .modal button {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  #close-workspace-btn,
+  #close-report-btn {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  #submit-report-btn {
+    background-color: #007bff;
+    color: #fff;
+  }/* Existing styles remain the same, add these new styles */
+.workspace-section,
+.report-section {
+  display: none;
+  padding: 15px;
+  background: #f1f3f5;
+  border-radius: 6px;
+  margin-top: 15px;
+
+}
+
+
+.report-section .submit-report-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  resize: vertical; 
+
+}
+
+.workspace-section textarea,
+.report-section textarea {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  resize: vertical; 
+}
+
+
+.report-section {
+    width: 100%;
+    padding: 15px;
+    background: #f1f3f5;
+    border-radius: 6px;
+    margin-top: 15px;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+  
+  .report-section textarea {
+    width: 100%;
+    min-height: 150px;
+    max-height: 300px;
+    height: auto;
+    resize: vertical;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    overflow: auto;
+  }
+  
+  .report-section .submit-report-btn {
+    display: block; /* Ensures button is on a new line */
+    width: 100%; /* Full width of the container */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-sizing: border-box;
+  }
+
+
+  .workspace-section,
+.report-section {
+  width: 100%;
+  padding: 15px;
+  background: #f1f3f5;
+  border-radius: 6px;
+  margin-top: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.workspace-section textarea,
+.report-section textarea {
+  width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  height: auto;
+  resize: vertical;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.report-section .submit-report-btn {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    header h1 {
+      font-size: 20px;
+    }
+  
+    .question-card h2 {
+      font-size: 16px;
+    }
+  
+    .options button {
+      font-size: 14px;
+    }
+  }
+  
